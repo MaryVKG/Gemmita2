@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/username"
             android:transitionName="username_tran"
-            android:hint="@string/email"
+            android:hint="@string/username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
