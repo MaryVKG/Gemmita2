@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "186933636693",
+    "project_id": "gemmita2-add4b",
+    "storage_bucket": "gemmita2-add4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186933636693:android:bc1b5189f3b3eb24b5eedc",
+        "android_client_info": {
+          "package_name": "guerrero.mary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186933636693-iedpiia8bo2cahmcfg7v2mapbohogiui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRUlscYocW4kPbHowRZNnoW3qf3g119u0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186933636693-iedpiia8bo2cahmcfg7v2mapbohogiui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
