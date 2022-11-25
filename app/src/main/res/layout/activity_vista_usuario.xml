@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VistaUsuario"
+    android:background="#FAD6A1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74FBA72B"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/miNombre"
+                android:layout_width="400dp"
+                android:layout_height="49dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="101dp"
+                android:fontFamily="@font/lemon"
+                android:includeFontPadding="false"
+                android:text="BIENVENIDOS A"
+                android:textColor="@color/purple"
+                android:textSize="39sp" />
+
+            <TextView
+                android:id="@+id/gemma2"
+                android:layout_width="279dp"
+                android:layout_height="49dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="101dp"
+                android:fontFamily="@font/lemon"
+                android:includeFontPadding="false"
+                android:text="Gemma2 Mobile"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:padding="20dp"
+            android:layout_marginStart="30dp"
+            android:background="#D8FFAC30"
+            android:layout_marginTop="-100dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="#F69847"
+                app:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_height="100dp"
+                    android:layout_width="80dp"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/nosotros"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="90dp"
+                        android:layout_width="70dp"
+                        android:onClick="intentNosotros"
+                        android:transitionName="transitionNosotros"
+                        android:src="@drawable/personas" />
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="#F69847"
+                app:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_height="100dp"
+                    android:layout_width="80dp"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/contacto"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="90dp"
+                        android:layout_width="70dp"
+                        android:onClick="intentContacto"
+                        android:transitionName="transitionContacto"
+                        android:src="@drawable/redessociales" />
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="#F69847"
+                app:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_height="100dp"
+                    android:layout_width="80dp"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/ubicacion"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="90dp"
+                        android:layout_width="70dp"
+                        android:onClick="intentUbicacion"
+                        android:transitionName="transitionUbicacion"
+                        android:src="@drawable/mapa" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="?actionBarSize"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#FF9900">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/general_search_icon"
+                    android:padding="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="145dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/black"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="145dp"
+                        android:background="@color/purple_700"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="-90dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/desc4" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="55dp"
+                            android:layout_marginTop="-50dp"
+                            android:text="Empanadas fritas a mitad de precio!"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="145dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/black"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="145dp"
+                        android:background="@color/purple_700"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="-90dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/desc3" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="55dp"
+                            android:layout_marginTop="-50dp"
+                            android:text="Empanadas de horno con 30%!"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="145dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/black"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="145dp"
+                        android:background="@color/purple_700"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="-90dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/desc2" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="55dp"
+                            android:layout_marginTop="-50dp"
+                            android:text="Liquidación de precios!"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="145dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/black"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="145dp"
+                        android:background="@color/purple_700"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="-90dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/desc1" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="55dp"
+                            android:layout_marginTop="-50dp"
+                            android:text="Postres con super ofertas!"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:padding="20dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#FBB752"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/empanada"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:onClick="intentEmpanada"
+                            android:src="@drawable/empanada"
+                            android:transitionName="transitionEmpanadas"/>
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#F8A833"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/postre"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:onClick="intentPostres"
+                            android:src="@drawable/postre"
+                            android:transitionName="transitionPostres" />
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#F4B75B"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/bebidas"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:onClick="intentBebidas"
+                            android:src="@drawable/refresco"
+                            android:transitionName="transitionBebidas" />
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#FBB44B"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/cafe"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:onClick="intentCafe"
+                            android:src="@drawable/cafe"
+                            android:transitionName="transitionCafe" />
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:padding="20dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#FBB752"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/jugos"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:onClick="intentJugos"
+                            android:src="@drawable/jugo"
+                            android:transitionName="transitionJugos" />
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#F8A833"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/pagos"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:onClick="intentPagos"
+                            android:src="@drawable/pagos"
+                            android:transitionName="transitionPagos" />
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#F4B75B"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/comenentarios"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:onClick="intentComentarios"
+                            android:src="@drawable/clasificacion"
+                            android:transitionName="transitionComentarios" />
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#FBB44B"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/atras"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:onClick="intentAtras"
+                            android:src="@drawable/back"
+                            android:transitionName="transitionAtras" />
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

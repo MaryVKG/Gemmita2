@@ -173,8 +173,21 @@
                 android:onClick="callLoginScreen"
                 android:transitionName="button_tran"/>
 
-
         </LinearLayout>
 
+        <ProgressBar
+            android:id="@+id/progressBarRegister"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:progressTint="#020202"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonRegistro"
+            />
     </LinearLayout>
 </LinearLayout>

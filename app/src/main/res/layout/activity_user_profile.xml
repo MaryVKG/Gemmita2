@@ -83,6 +83,8 @@
                         android:layout_centerHorizontal="true"
                         android:layout_height="120dp"
                         android:layout_width="90dp"
+                        android:onClick="intentClient"
+                        android:transitionName="transitionCliente"
                         android:src="@drawable/client" />
 
 
@@ -106,6 +108,8 @@
                         android:layout_centerHorizontal="true"
                         android:layout_height="120dp"
                         android:layout_width="90dp"
+                        android:onClick="intentTrabajador"
+                        android:transitionName="transitionTrabajador"
                         android:src="@drawable/personal" />
 
                 </RelativeLayout>
@@ -150,7 +154,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:hint="Teléfono"
-                android:id="@+id/user_profile"
+                android:id="@+id/phone_profile"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_marginTop="10dp">
@@ -183,6 +187,7 @@
                 android:text="ACTUALIZAR DATOS"
                 android:textColor="@color/black"
                 android:layout_gravity="center"
+                android:id="@+id/clearTextt"
                 android:layout_marginTop="20dp"/>
 
         </LinearLayout>

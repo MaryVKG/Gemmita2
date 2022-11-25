@@ -2,9 +2,15 @@ package guerrero.mary;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
@@ -16,6 +22,8 @@ public class Sign_Up extends AppCompatActivity {
     Button regBtn, regToLoginBtn;
     FirebaseDatabase rootNode;
     DatabaseReference reference;
+
+    ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +37,37 @@ public class Sign_Up extends AppCompatActivity {
         regPassword = findViewById(R.id.reg_password);
         regBtn = findViewById(R.id.signUpBtn);
         regToLoginBtn = findViewById(R.id.loginBtn);
+
+
+        progressBar = (ProgressBar) findViewById(R.id.progressBarRegister);
+        progressBar.setMax(19);
+
+        AsyncTask tareaPesada= new AsyncTask() {
+            @Override
+            protected Object doInBackground(Object[] objects) {
+                for(int i=0; i<20;i++){
+                    publishProgress(i);
+                    try{
+                        Thread.sleep(1000);
+                    }catch (InterruptedException exception){
+                        exception.printStackTrace();
+                    }
+
+                }
+                return  null;
+            }
+
+            @Override
+            protected void onProgressUpdate(Object[] values) {
+                super.onProgressUpdate(values);
+
+                ProgressBar progressBar = ((ProgressBar) findViewById(R.id.progressBarRegister));
+                progressBar.setProgress((Integer) values[0]);
+            }
+        };
+        tareaPesada.execute();
+
+
 
 
         //Save data in FireBase on button click
@@ -152,4 +191,21 @@ public class Sign_Up extends AppCompatActivity {
         reference.child(username).setValue(helperClass);
 
     }
+
+
+    public void callLoginScreen(View view) {
+        Intent intent = new Intent(getApplicationContext(), Login.class);
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(findViewById(R.id.loginBtn), "button_tran");
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Sign_Up.this, pairs);
+            startActivity(intent,options.toBundle());
+        }else {
+            startActivity(intent);
+        }
+
+    }
 }
+

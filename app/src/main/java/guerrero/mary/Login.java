@@ -1,8 +1,5 @@
 package guerrero.mary;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,9 +10,12 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -47,6 +47,11 @@ public class Login extends AppCompatActivity {
         usuario = findViewById(R.id.username);
         contra = findViewById(R.id.password);
 
+
+        //vibrador
+        vibrator = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+
+
         btnRegistro = findViewById(R.id.callSignUp);
         btnInicio = findViewById(R.id.callLogin);
 
@@ -63,6 +68,10 @@ public class Login extends AppCompatActivity {
         btnRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                vibrator.vibrate(1000);
+                Toast.makeText(Login.this, "Botón Registro presionado", Toast.LENGTH_SHORT).show();
+
+
                 Intent intent = new Intent(Login.this, Sign_Up.class);
                 Pair[] pairs = new Pair[6];
                 pairs[0] = new Pair<View, String>(image, "imagenAnimada");
@@ -109,6 +118,8 @@ public class Login extends AppCompatActivity {
         if (!validateUsername() | !validatePassword()) {
             return;
         } else {
+            vibrator.vibrate(1000);
+            Toast.makeText(Login.this, "Inicio Éxitoso", Toast.LENGTH_SHORT).show();
             isUser();
         }
     }
