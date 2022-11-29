@@ -38,8 +38,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
 
-        LatLng quiscoNorte = new LatLng(-33, 72);
-        LatLng quiscoCentro = new LatLng(-33, 73);
+        LatLng quiscoNorte = new LatLng(-33.3804906661052, -71.68648150292526);
+        LatLng quiscoCentro = new LatLng( -33.395434187956454,  -71.69494864603585);
 
         mMap.addMarker(new MarkerOptions().position(quiscoNorte).title("Local Quisco Norte"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(quiscoNorte));

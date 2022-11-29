@@ -82,4 +82,95 @@ public class VistaUsuario extends AppCompatActivity {
         }
     }
 
+    public void intentBebidas(View view){
+        Intent intent = new Intent(getApplicationContext(),  Productos_Bebidas.class);
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(findViewById(R.id.bebidas), "transitionBebidas");
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(VistaUsuario.this, pairs);
+            startActivity(intent,options.toBundle());
+        }else {
+            startActivity(intent);
+        }
+    }
+
+    public void intentCafe(View view){
+        Intent intent = new Intent(getApplicationContext(),  Producto_Cafe.class);
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(findViewById(R.id.cafe), "transitionCafe");
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(VistaUsuario.this, pairs);
+            startActivity(intent,options.toBundle());
+        }else {
+            startActivity(intent);
+        }
+    }
+
+    public void intentJugos(View view){
+        Intent intent = new Intent(getApplicationContext(),  Producto_Jugos.class);
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(findViewById(R.id.jugos), "transitionJugos");
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(VistaUsuario.this, pairs);
+            startActivity(intent,options.toBundle());
+        }else {
+            startActivity(intent);
+        }
+    }
+
+
+    public void intentPagos(View view){
+        Intent intent = new Intent(getApplicationContext(),  FormaDe_Pago.class);
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(findViewById(R.id.pagos), "transitionPagos");
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(VistaUsuario.this, pairs);
+            startActivity(intent,options.toBundle());
+        }else {
+            startActivity(intent);
+        }
+    }
+
+
+    public void intentComentarios(View view){
+        Intent intent = new Intent(getApplicationContext(),  TweetsClientes.class);
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(findViewById(R.id.comenentarios), "transitionComentarios");
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(VistaUsuario.this, pairs);
+            startActivity(intent,options.toBundle());
+        }else {
+            startActivity(intent);
+        }
+    }
+
+
+
+    public void intentAtras(View view){
+        Intent intent = new Intent(getApplicationContext(), UserProfile.class);
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(findViewById(R.id.atras), "transitionAtras");
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(VistaUsuario.this, pairs);
+            startActivity(intent,options.toBundle());
+        }else {
+            startActivity(intent);
+        }
+    }
+
+
+
+
 }

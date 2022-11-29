@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAD6A1"
+    tools:context=".Producto_Jugos">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#E9F4CA8B">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/general_back_icon"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            app:tint="@color/black" />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/lemon"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/colorSecondary"
+        android:text="LISTA DE JUGOS"
+        android:layout_marginTop="110dp">
+
+    </TextView>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="145dp"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/purple_700"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="-90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/jugo5" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="JUGO DE FRUTILLA"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="145dp"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/purple_700"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="-90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/jugo6" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="JUGO DE SANDÍA"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="145dp"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/purple_700"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="-90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/jugo7" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="JUGO DE MORA"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="145dp"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/purple_700"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="-90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/jugo8" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="JUGO DE UVA"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="145dp"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/purple_700"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="-90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/jugo1" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="JUGO DE PIÑA"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="145dp"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/purple_700"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="-90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/jugo2" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="JUGO DE PERA"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="145dp"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/purple_700"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="-90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/jugo3" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="JUGO DE MANGO"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="145dp"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/purple_700"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="-90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/jugo4" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="JUGO DE NARANJA"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</RelativeLayout>

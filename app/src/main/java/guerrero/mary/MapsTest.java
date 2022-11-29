@@ -15,14 +15,12 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsTest extends AppCompatActivity implements OnMapReadyCallback {
 
-
     private GoogleMap mMap;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+        setContentView(R.layout.activity_maps_test);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -32,15 +30,11 @@ public class MapsTest extends AppCompatActivity implements OnMapReadyCallback {
                 finish();
             }
         },2500);
-
     }
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
-
         mMap = googleMap;
-
-
 
 
         LatLng quiscoNorte = new LatLng(-33, 72);
@@ -51,5 +45,6 @@ public class MapsTest extends AppCompatActivity implements OnMapReadyCallback {
 
         mMap.addMarker(new MarkerOptions().position(quiscoCentro).title("Local Quisco Centro"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(quiscoCentro));
+
     }
 }
