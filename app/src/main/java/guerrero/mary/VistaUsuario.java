@@ -35,6 +35,20 @@ public class VistaUsuario extends AppCompatActivity {
         }
     }
 
+    public void intentContacto(View view){
+        Intent intent = new Intent(getApplicationContext(),  ContactUs.class);
+        Pair[] pairs = new Pair[1];
+        pairs[0] = new Pair<View, String>(findViewById(R.id.contacto), "transitionContacto");
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(VistaUsuario.this, pairs);
+            startActivity(intent,options.toBundle());
+        }else {
+            startActivity(intent);
+        }
+    }
+
     public void intentUbicacion(View view){
         Intent intent = new Intent(getApplicationContext(),  MapsTest.class);
         Pair[] pairs = new Pair[1];
